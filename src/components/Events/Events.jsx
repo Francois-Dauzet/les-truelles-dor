@@ -15,7 +15,7 @@ const events = [
     items: [
       {
         icon: <MapRoundedIcon className="item-icon" />,
-        primary: 'Lieux',
+        primary: 'Lieu',
         secondary: 'Le Petanco',
       },
       {
@@ -43,7 +43,7 @@ const events = [
     items: [
       {
         icon: <MapRoundedIcon className="item-icon" />,
-        primary: 'Lieux',
+        primary: 'Lieu',
         secondary: 'Le Petanco',
       },
       {
