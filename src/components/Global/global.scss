@@ -1,17 +1,14 @@
-$theme-color-4: #161b1598;
-$theme-color-5: #2c3d2b98;
+@import './../../styles/theme.scss';
 
 .container-global {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: $theme-color-4;
+  background-color: $background-color;
   backdrop-filter: blur(2px);
   padding: 1rem;
   padding-bottom: 2rem;
   margin: 2rem 0;
-  //   border-top: 2px solid #908e86;
-  //   border-bottom: 2px solid #908e8640;
 
   .header {
     margin: 1rem 8% 2rem 8%;

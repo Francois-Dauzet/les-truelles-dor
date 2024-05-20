@@ -1,11 +1,10 @@
-$theme-color-4: #161b1598;
-$theme-color-5: #2c3d2b98;
+@import './../../styles/theme.scss';
 
 .container-events {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: $theme-color-4;
+  background-color: $background-color;
   backdrop-filter: blur(2px);
   padding: 1rem;
   margin: 4rem 0;
@@ -24,7 +23,7 @@ $theme-color-5: #2c3d2b98;
       padding-bottom: 0.5rem;
       font-size: 1.5rem;
       font-family: Gilroy-Bold;
-      border-bottom: 1px solid #908e8640;
+      border-bottom: 1px solid $border-color;
       margin: 0;
     }
 
@@ -55,7 +54,7 @@ $theme-color-5: #2c3d2b98;
       @media (max-width: 1024px) {
         width: 100%;
         padding: 0;
-        border-bottom: 1px solid #908e8640;
+        border-bottom: 1px solid $border-color;
       }
 
       .container-date h3 {

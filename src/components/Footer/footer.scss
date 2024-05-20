@@ -1,4 +1,4 @@
-$theme-color-4: #161b1598;
+@import './../../styles/theme.scss';
 
 .container-footer {
   /* -----------------------------------
@@ -9,7 +9,7 @@ $theme-color-4: #161b1598;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: $theme-color-4;
+  background-color: $background-color;
   backdrop-filter: blur(2px);
   margin: 2rem 0 0 0;
 
@@ -34,7 +34,7 @@ $theme-color-4: #161b1598;
   }
 
   .line {
-    background-color: #908e8640;
+    background-color: $border-color;
     width: 100%;
     height: 1px;
   }
