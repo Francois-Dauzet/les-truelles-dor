@@ -1,24 +1,18 @@
 $theme-color-4: #161b1598;
 $theme-color-5: #2c3d2b98;
 
-.background-container {
+.background-image {
+  background-image: url(../assets/backgrounds/background_primary.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
-  overflow: hidden;
-
-  .background-image {
-    background-image: url(../assets/backgrounds/background_primary.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .background-color {

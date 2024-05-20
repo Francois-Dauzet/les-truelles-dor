@@ -8,9 +8,7 @@ import './styles/app.scss';
 function App() {
   return (
     <>
-      <div class="background-container">
-        <div class="background-image"></div>
-      </div>
+      <div className="background-image"></div>
       <Header />
       <Global />
       <Events />
