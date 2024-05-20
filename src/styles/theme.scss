@@ -1,0 +1,90 @@
+/*
+* Theme color palette
+*/
+$theme-color-0: #fefefd;
+$theme-color-1: #000814;
+$theme-color-2: #001d3d;
+$theme-color-3: #003566;
+$theme-color-4: #cca000;
+$theme-color-5: #f5cc00;
+
+$text-color: (
+  primary: (
+    100: $theme-color-1,
+    75: rgba($theme-color-1, 0.75),
+    50: rgba($theme-color-1, 0.5),
+    25: rgba($theme-color-1, 0.25),
+  ),
+  secondary: (
+    100: $theme-color-2,
+    75: rgba($theme-color-2, 0.75),
+    50: rgba($theme-color-2, 0.5),
+    25: rgba($theme-color-2, 0.25),
+  ),
+  tertiary: (
+    100: $theme-color-3,
+    75: rgba($theme-color-3, 0.75),
+    50: rgba($theme-color-3, 0.5),
+    25: rgba($theme-color-3, 0.25),
+  ),
+  on-primary: (
+    100: $theme-color-0,
+    75: rgba($theme-color-0, 0.75),
+    50: rgba($theme-color-0, 0.5),
+    25: rgba($theme-color-0, 0.25),
+  ),
+  on-secondary: (
+    100: $theme-color-5,
+    75: rgba($theme-color-5, 0.75),
+    50: rgba($theme-color-5, 0.5),
+    25: rgba($theme-color-5, 0.25),
+  ),
+  on-tertiary: (
+    100: $theme-color-4,
+    75: rgba($theme-color-4, 0.75),
+    50: rgba($theme-color-4, 0.5),
+    25: rgba($theme-color-4, 0.25),
+  ),
+);
+
+$background: (
+  primary: (
+    100: $theme-color-0,
+    75: rgba($theme-color-0, 0.75),
+    50: rgba($theme-color-0, 0.5),
+    25: rgba($theme-color-0, 0.25),
+  ),
+  secondary: (
+    100: $theme-color-5,
+    75: rgba($theme-color-5, 0.75),
+    50: rgba($theme-color-5, 0.5),
+    25: rgba($theme-color-5, 0.25),
+  ),
+  tertiary: (
+    100: $theme-color-4,
+    75: rgba($theme-color-4, 0.75),
+    50: rgba($theme-color-4, 0.5),
+    25: rgba($theme-color-4, 0.25),
+  ),
+  on-primary: (
+    100: $theme-color-1,
+    75: rgba($theme-color-1, 0.75),
+    50: rgba($theme-color-1, 0.5),
+    25: rgba($theme-color-1, 0.25),
+  ),
+  on-secondary: (
+    100: $theme-color-2,
+    75: rgba($theme-color-2, 0.75),
+    50: rgba($theme-color-2, 0.5),
+    25: rgba($theme-color-2, 0.25),
+  ),
+  on-tertiary: (
+    100: $theme-color-3,
+    75: rgba($theme-color-3, 0.75),
+    50: rgba($theme-color-3, 0.5),
+    25: rgba($theme-color-3, 0.25),
+  ),
+  transparent: #0000,
+);
+
+// map-get(map-get($text-color, primary), 100);
