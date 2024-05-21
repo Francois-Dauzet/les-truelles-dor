@@ -1,71 +1,17 @@
 import React, { useState } from 'react';
-
 import './events.scss';
-import EmojiEventsRoundedIcon from '@mui/icons-material/EmojiEventsRounded';
-import EuroRoundedIcon from '@mui/icons-material/EuroRounded';
-import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
-import MapRoundedIcon from '@mui/icons-material/MapRounded';
-
-const events = [
-  {
-    date: '28 Mai 2023',
-    association: 'Le petit monde de manon',
-    description:
-      'qui nostrum libero quia sapiente dolorem asperiores aut delectus fugit neque? Explicabo maxime possimus commodi, est labore deserunt sed non voluptatum, debitis adipisci magni. Accusamus inventore ad iure, molestias voluptas possimu',
-    items: [
-      {
-        icon: <MapRoundedIcon className="item-icon" />,
-        primary: 'Lieu',
-        secondary: 'Le Petanco',
-      },
-      {
-        icon: <EmojiEventsRoundedIcon className="item-icon" />,
-        primary: 'Gagnants',
-        secondary: 'Thomas & Julie',
-      },
-      {
-        icon: <PeopleAltRoundedIcon className="item-icon" />,
-        primary: 'Participants',
-        secondary: 163,
-      },
-      {
-        icon: <EuroRoundedIcon className="item-icon" />,
-        primary: 'Gain Total',
-        secondary: 1845,
-      },
-    ],
-  },
-  {
-    date: '28 Mai 2023',
-    association: 'Le petit monde de manon',
-    description:
-      'qui nostrum libero quia sapiente dolorem asperiores aut delectus fugit neque? Explicabo maxime possimus commodi, est labore deserunt sed non voluptatum, debitis adipisci magni. Accusamus inventore ad iure, molestias voluptas possimu',
-    items: [
-      {
-        icon: <MapRoundedIcon className="item-icon" />,
-        primary: 'Lieu',
-        secondary: 'Le Petanco',
-      },
-      {
-        icon: <EmojiEventsRoundedIcon className="item-icon" />,
-        primary: 'Gagnants',
-        secondary: 'Thomas & Julie',
-      },
-      {
-        icon: <PeopleAltRoundedIcon className="item-icon" />,
-        primary: 'Participants',
-        secondary: 163,
-      },
-      {
-        icon: <EuroRoundedIcon className="item-icon" />,
-        primary: 'Gain Total',
-        secondary: 1845,
-      },
-    ],
-  },
-];
+import { format, parse } from 'date-fns';
+import { eventsData } from '../../data/eventsData';
+import fr from 'date-fns/locale/fr';
 
 const Events = () => {
+  const sortedEvents = eventsData
+    .map((event) => ({
+      ...event,
+      dateObject: parse(event.date, 'd/M/yy', new Date()),
+    }))
+    .sort((a, b) => b.dateObject - a.dateObject);
+
   return (
     <section>
       <div className="container-events">
@@ -75,10 +21,12 @@ const Events = () => {
         </div>
 
         <div className="container-cards">
-          {events.map((event, index) => (
+          {sortedEvents.map((event, index) => (
             <div key={index} className="item-card">
               <div className="container-date">
-                <h3 translate="no">{event.date}</h3>
+                <h5 translate="no">
+                  {format(event.dateObject, 'd MMMM yyyy', { locale: fr })}
+                </h5>
               </div>
               <div className="container-association">
                 <h4 translate="no">{event.association}</h4>
