@@ -20,17 +20,17 @@
     }
 
     h3 {
-      color: #eeeee9;
+      color: $title-color;
       padding-bottom: 0.5rem;
       font-size: 1.5rem;
       font-family: Gilroy-Bold;
-      border-bottom: 1px solid #908f8740;
+      border-bottom: 1px solid $border-color;
       margin: 0;
     }
 
     p {
       margin: 0;
-      color: #eeeee999;
+      color: $subtitle-color;
       padding-top: 0.5rem;
       font-size: 1rem;
       font-family: Gilroy-Regular;
@@ -62,8 +62,8 @@
       }
 
       .item-icon {
-        background-color: #eeeee9;
-        color: #161b15;
+        background-color: $icon-background-color;
+        color: $icon-color;
         padding: 0.75rem;
         border-radius: 50%;
         font-size: 48px;
@@ -71,7 +71,7 @@
       }
 
       .primary {
-        color: #908f87;
+        color: $card-explanation-color;
         margin: 0.5rem 0;
         font-size: 1rem;
         font-family: Gilroy-regular;
@@ -80,7 +80,7 @@
       }
 
       .secondary {
-        color: #eeeee9;
+        color: $card-value-color;
         margin: 0;
         font-size: 1.25rem;
         font-family: Gilroy-SemiBold;

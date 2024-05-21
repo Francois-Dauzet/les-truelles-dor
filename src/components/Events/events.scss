@@ -19,7 +19,7 @@
     }
 
     h3 {
-      color: #eeeee9;
+      color: $title-color;
       padding-bottom: 0.5rem;
       font-size: 1.5rem;
       font-family: Gilroy-Bold;
@@ -29,7 +29,7 @@
 
     p {
       margin: 0;
-      color: #eeeee999;
+      color: $subtitle-color;
       padding-top: 0.5rem;
       font-size: 1rem;
       font-family: Gilroy-Regular;
@@ -59,26 +59,26 @@
 
       .container-date h3 {
         font-family: 'Gilroy-SemiBold';
-        color: #eeeee9ee;
+        color: $date-color;
         font-size: 1.25rem;
         margin: 0 0 0 0;
-        border-left: 4px solid #f8c663;
+        border-left: 4px solid $gold-color;
         padding-left: 0.5rem;
         padding-bottom: 0.25rem;
       }
 
       .container-association h4 {
         font-family: 'Gilroy-SemiBold';
-        color: #fff;
+        color: $title-color;
         font-size: 1.5rem;
         margin: 0 0 0.75rem 0;
-        border-left: 4px solid #f8c663;
+        border-left: 4px solid $gold-color;
         padding-left: 0.5rem;
       }
 
       .container-description p {
         font-family: 'Gilroy-regular';
-        color: #eeeee9cc;
+        color: $description-color;
         font-size: 1rem;
         margin: 0 0 0.75rem 0;
       }
@@ -97,15 +97,12 @@
           display: flex;
           align-items: center;
           justify-content: flex-start;
-          font-family: 'Gilroy-regular';
-          color: #eeeee9cc;
-          font-size: 1rem;
           margin: 0.75rem 0;
           width: 50%;
 
           .item-icon {
-            background-color: #eeeee9;
-            color: #161b15;
+            background-color: $icon-background-color;
+            color: $icon-color;
             padding: 0.25rem;
             border-radius: 50%;
             font-size: 24px;
@@ -118,7 +115,7 @@
               margin: 0;
             }
             .primary {
-              color: #908f87;
+              color: $card-explanation-color;
               font-size: 1rem;
               font-family: Gilroy-regular;
               text-transform: uppercase;
@@ -126,7 +123,7 @@
             }
 
             .secondary {
-              color: #eeeee9;
+              color: $card-value-color;
               font-size: 1rem;
               font-family: Gilroy-SemiBold;
               white-space: nowrap;
