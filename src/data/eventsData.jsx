@@ -5,86 +5,142 @@ import MapRoundedIcon from '@mui/icons-material/MapRounded';
 
 export const eventsData = [
   {
-    date: '10/12/21',
-    association: 'Le petit monde de manon',
+    date: '25/4/24',
+    association: 'Amis des animaux',
     description:
-      'qui nostrum libero quia sapiente dolorem asperiores aut delectus fugit neque? Explicabo maxime possimus commodi, est labore deserunt sed non voluptatum, debitis adipisci magni. Accusamus inventore ad iure, molestias voluptas possimu',
+      'Nous avons organisé une journée amusante au parc pour sensibiliser et collecter des fonds pour les refuges pour animaux.',
     items: [
       {
         icon: <MapRoundedIcon className="item-icon" />,
         primary: 'Lieu',
-        secondary: 'Le Petanco',
+        secondary: 'Parc des Amis',
       },
       {
         icon: <EmojiEventsRoundedIcon className="item-icon" />,
         primary: 'Gagnants',
-        secondary: 'Thomas & Julie',
+        secondary: 'Luc & Marie',
       },
       {
         icon: <PeopleAltRoundedIcon className="item-icon" />,
         primary: 'Participants',
-        secondary: 163,
+        secondary: 150,
       },
       {
         icon: <EuroRoundedIcon className="item-icon" />,
-        primary: 'Gain Total',
-        secondary: 1845,
+        primary: 'Collecté',
+        secondary: 2300,
       },
     ],
   },
   {
-    date: '8/10/21',
-    association: 'sapiente dolorem asperiores',
+    date: '14/7/23',
+    association: 'Nature Propre',
     description:
-      'qui nostrum libero quia sapiente dolorem asperiores aut delectus fugit neque? Explicabo maxime possimus commodi, est labore deserunt sed non voluptatum, debitis adipisci magni. Accusamus inventore ad iure, molestias voluptas possimu',
+      'Journée de nettoyage communautaire pour promouvoir la préservation de l’environnement et des espaces verts.',
     items: [
       {
         icon: <MapRoundedIcon className="item-icon" />,
         primary: 'Lieu',
-        secondary: 'Le Petanco',
+        secondary: 'Théâtre de la Ville',
       },
       {
         icon: <EmojiEventsRoundedIcon className="item-icon" />,
         primary: 'Gagnants',
-        secondary: 'Thomas & Julie',
+        secondary: 'Paul & Julie',
       },
       {
         icon: <PeopleAltRoundedIcon className="item-icon" />,
         primary: 'Participants',
-        secondary: 163,
+        secondary: 200,
       },
       {
         icon: <EuroRoundedIcon className="item-icon" />,
-        primary: 'Gain Total',
-        secondary: 1845,
+        primary: 'Collecté',
+        secondary: 3400,
       },
     ],
   },
   {
-    date: '19/8/24',
-    association: 'Le petit monde de manon',
+    date: '1/5/24',
+    association: 'Solidarité Santé',
     description:
-      'qui nostrum libero quia sapiente dolorem asperiores aut delectus fugit neque? Explicabo maxime possimus commodi, est labore deserunt sed non voluptatum, debitis adipisci magni. Accusamus inventore ad iure, molestias voluptas possimu',
+      'Une course à pied pour collecter des fonds et sensibiliser à la recherche médicale et aux soins de santé pour tous.',
     items: [
       {
         icon: <MapRoundedIcon className="item-icon" />,
         primary: 'Lieu',
-        secondary: 'Le Petanco',
+        secondary: 'Stade Municipal',
       },
       {
         icon: <EmojiEventsRoundedIcon className="item-icon" />,
         primary: 'Gagnants',
-        secondary: 'Thomas & Julie',
+        secondary: 'Nina & Karim',
       },
       {
         icon: <PeopleAltRoundedIcon className="item-icon" />,
         primary: 'Participants',
-        secondary: 163,
+        secondary: 300,
       },
       {
         icon: <EuroRoundedIcon className="item-icon" />,
-        primary: 'Gain Total',
-        secondary: 1845,
+        primary: 'Collecté',
+        secondary: 5000,
+      },
+    ],
+  },
+  {
+    date: '18/6/23',
+    association: 'Enfants du monde',
+    description:
+      'Un festival culturel pour soutenir l’éducation des enfants dans les pays en développement.',
+    items: [
+      {
+        icon: <MapRoundedIcon className="item-icon" />,
+        primary: 'Lieu',
+        secondary: 'Salle des Fêtes',
+      },
+      {
+        icon: <EmojiEventsRoundedIcon className="item-icon" />,
+        primary: 'Gagnants',
+        secondary: 'Emma & John',
+      },
+      {
+        icon: <PeopleAltRoundedIcon className="item-icon" />,
+        primary: 'Participants',
+        secondary: 220,
+      },
+      {
+        icon: <EuroRoundedIcon className="item-icon" />,
+        primary: 'Collecté',
+        secondary: 4100,
+      },
+    ],
+  },
+  {
+    date: '3/9/23',
+    association: 'Nature Propre',
+    description:
+      'Journée de nettoyage communautaire pour promouvoir la préservation de l’environnement et des espaces verts.',
+    items: [
+      {
+        icon: <MapRoundedIcon className="item-icon" />,
+        primary: 'Lieu',
+        secondary: 'Forêt Nationale',
+      },
+      {
+        icon: <EmojiEventsRoundedIcon className="item-icon" />,
+        primary: 'Gagnants',
+        secondary: 'Sophie & Leo',
+      },
+      {
+        icon: <PeopleAltRoundedIcon className="item-icon" />,
+        primary: 'Participants',
+        secondary: 180,
+      },
+      {
+        icon: <EuroRoundedIcon className="item-icon" />,
+        primary: 'Collecté',
+        secondary: 1600,
       },
     ],
   },
