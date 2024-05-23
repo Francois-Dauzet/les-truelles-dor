@@ -1,0 +1,24 @@
+/*
+* Scroll bar
+*/
+::-webkit-scrollbar {
+  width: 12px; /* Largeur de la scrollbar */
+}
+
+::-webkit-scrollbar-horizontal {
+  height: 12px; /* Hauteur de la scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $subtitle-color;
+  border-radius: 6px; /* Bord arrondi du bouton de défilement */
+  border: 3px solid $background-global;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $title-color;
+  cursor: grab;
+  &:active {
+    cursor: grabbing;
+  }
+}
