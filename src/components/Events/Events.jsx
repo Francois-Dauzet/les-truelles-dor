@@ -16,7 +16,7 @@ const Events = () => {
     <section>
       <div className="container-events">
         <div className="header">
-          <h3>Événements Archivés</h3>
+          <h3>Évènements Archivés</h3>
           <p>Retracer l'histoire et l'évolution à travers chaque édition.</p>
         </div>
 

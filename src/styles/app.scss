@@ -14,10 +14,3 @@ $theme-color-5: #2c3d2b98;
   left: 0;
   z-index: -1;
 }
-
-.background-color {
-  background: linear-gradient(270deg, $theme-color-4, $theme-color-5);
-  backdrop-filter: blur(2px);
-  padding: 20px;
-  margin: 20px 0;
-}

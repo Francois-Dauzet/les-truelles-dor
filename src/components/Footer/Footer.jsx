@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="container-footer">
-        <h5 translate="no">francois-d.com</h5>
+        <h5 translate="no">les-truelles-dor</h5>
         <p translate="no" className="version">
           {packageJson.version}
         </p>
