@@ -49,6 +49,24 @@ const Events = () => {
                   ))}
                 </ul>
               </div>
+
+              <div className="sponsors-card-content">
+                <div className="header">
+                  <h3></h3>
+                  <p>
+                    Les sponsors présents et contributeurs de cet événement.
+                  </p>
+                </div>
+                <ul>
+                  {event.sponsors.map((item, itemIndex) => (
+                    <li key={itemIndex}>
+                      <a href={item.link}>
+                        <img src={item.logo} alt={item.name} />
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           ))}
         </div>

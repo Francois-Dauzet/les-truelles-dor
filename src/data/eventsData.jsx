@@ -1,3 +1,6 @@
+/*
+ * Icons
+ */
 import EmojiEventsRoundedIcon from '@mui/icons-material/EmojiEventsRounded';
 import EuroRoundedIcon from '@mui/icons-material/EuroRounded';
 import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
@@ -31,6 +34,18 @@ export const eventsData = [
         secondary: 2300,
       },
     ],
+    sponsors: [
+      {
+        name: 'Sponsor 4',
+        logo: 'https://cdn.worldvectorlogo.com/logos/hyatt.svg',
+        link: 'https://sponsor4.com',
+      },
+      {
+        name: 'Sponsor 5',
+        logo: 'https://cdn.worldvectorlogo.com/logos/old-navy-1.svg',
+        link: 'https://sponsor5.com',
+      },
+    ],
   },
   {
     date: '14/7/23',
@@ -57,6 +72,23 @@ export const eventsData = [
         icon: <EuroRoundedIcon className="item-icon" />,
         primary: 'Collecté',
         secondary: 3400,
+      },
+    ],
+    sponsors: [
+      {
+        name: 'Sponsor 1',
+        logo: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/26529/logo-LAUZIARD.png',
+        link: 'https://sponsor1.com',
+      },
+      {
+        name: 'Sponsor 4',
+        logo: 'https://cdn.worldvectorlogo.com/logos/hyatt.svg',
+        link: 'https://sponsor4.com',
+      },
+      {
+        name: 'Sponsor 5',
+        logo: 'https://cdn.worldvectorlogo.com/logos/old-navy-1.svg',
+        link: 'https://sponsor5.com',
       },
     ],
   },
@@ -87,6 +119,18 @@ export const eventsData = [
         secondary: 5000,
       },
     ],
+    sponsors: [
+      {
+        name: 'Sponsor 1',
+        logo: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/26529/logo-LAUZIARD.png',
+        link: 'https://sponsor1.com',
+      },
+      {
+        name: 'Sponsor 2',
+        logo: 'https://cdn.worldvectorlogo.com/logos/agl-retail-energy.svg',
+        link: 'https://sponsor2.com',
+      },
+    ],
   },
   {
     date: '18/6/23',
@@ -115,6 +159,18 @@ export const eventsData = [
         secondary: 4100,
       },
     ],
+    sponsors: [
+      {
+        name: 'Sponsor 4',
+        logo: 'https://cdn.worldvectorlogo.com/logos/hyatt.svg',
+        link: 'https://sponsor4.com',
+      },
+      {
+        name: 'Sponsor 5',
+        logo: 'https://cdn.worldvectorlogo.com/logos/old-navy-1.svg',
+        link: 'https://sponsor5.com',
+      },
+    ],
   },
   {
     date: '3/9/23',
@@ -141,6 +197,18 @@ export const eventsData = [
         icon: <EuroRoundedIcon className="item-icon" />,
         primary: 'Collecté',
         secondary: 1600,
+      },
+    ],
+    sponsors: [
+      {
+        name: 'Sponsor 1',
+        logo: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/26529/logo-LAUZIARD.png',
+        link: 'https://sponsor1.com',
+      },
+      {
+        name: 'Sponsor 2',
+        logo: 'https://cdn.worldvectorlogo.com/logos/agl-retail-energy.svg',
+        link: 'https://sponsor2.com',
       },
     ],
   },

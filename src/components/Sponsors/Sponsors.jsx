@@ -3,40 +3,26 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './sponsors.scss';
+import { eventsData } from '../../data/eventsData';
 
-import EmojiEventsRoundedIcon from '@mui/icons-material/EmojiEventsRounded';
-import EuroRoundedIcon from '@mui/icons-material/EuroRounded';
-import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
-import DateRangeRoundedIcon from '@mui/icons-material/DateRangeRounded';
+const getUniqueSponsors = (events) => {
+  const seen = new Set();
+  const uniqueSponsors = [];
+
+  events.forEach((event) => {
+    event.sponsors.forEach((sponsor) => {
+      if (!seen.has(sponsor.name)) {
+        seen.add(sponsor.name);
+        uniqueSponsors.push(sponsor);
+      }
+    });
+  });
+
+  return uniqueSponsors;
+};
 
 const Sponsors = () => {
-  const sponsors = [
-    {
-      name: 'Sponsor 1',
-      logo: 'https://local-fr-public.s3.eu-west-3.amazonaws.com/prod/webtool/userfiles/26529/logo-LAUZIARD.png',
-      link: 'https://sponsor1.com',
-    },
-    {
-      name: 'Sponsor 2',
-      logo: 'https://cdn.worldvectorlogo.com/logos/agl-retail-energy.svg',
-      link: 'https://sponsor2.com',
-    },
-    {
-      name: 'Sponsor 3',
-      logo: 'https://cdn.worldvectorlogo.com/logos/grafana.svg',
-      link: 'https://sponsor3.com',
-    },
-    {
-      name: 'Sponsor 4',
-      logo: 'https://cdn.worldvectorlogo.com/logos/hyatt.svg',
-      link: 'https://sponsor4.com',
-    },
-    {
-      name: 'Sponsor 5',
-      logo: 'https://cdn.worldvectorlogo.com/logos/old-navy-1.svg',
-      link: 'https://sponsor5.com',
-    },
-  ];
+  const sponsors = getUniqueSponsors(eventsData);
 
   const settings = {
     dots: false,
