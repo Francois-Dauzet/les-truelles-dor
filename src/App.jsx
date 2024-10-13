@@ -6,16 +6,16 @@ import Sponsors from './components/Sponsors/Sponsors';
 import './styles/app.scss';
 
 function App() {
-  return (
-    <>
-      <div className="background-image"></div>
-      <Header />
-      <Global />
-      <Events />
-      <Sponsors />
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <div className="background-image"></div>
+            <Header/>
+            <Global/>
+            <Events/>
+            <Sponsors/>
+            <Footer/>
+        </>
+    );
 }
 
 export default App;
